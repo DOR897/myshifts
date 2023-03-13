@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.TimeFragment">
+
+    <TextView
+        android:id="@+id/userTextViewTimePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="hello , now time is "
+        android:textStyle="bold" />
+
+    <TextClock
+        android:id="@+id/ClockTimePage"
+        android:layout_width="161dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/calendarTextViewTimePage"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonCheckInTimePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:background="@drawable/button_design"
+
+                android:text="Check IN" />
+            <Chronometer
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/chronometerTimePage"
+                android:height="30dp"
+                android:layout_gravity="center">
+
+            </Chronometer>
+
+            <Button
+                android:id="@+id/buttonCheckOutTimePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:background="@drawable/button_design"
+                android:text="Check Out" />
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/design"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonShiftsTimePage"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:text="My Shifts" />
+
+            <Button
+                android:id="@+id/buttonMySalaryTimePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:text="MySalary" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

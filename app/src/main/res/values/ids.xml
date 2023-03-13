@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="day" type="id" />
+    <item name="check_in_time" type="id" />
+    <item name="check_out_time" type="id" />
+</resources>

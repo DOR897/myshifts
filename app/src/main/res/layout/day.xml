@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dayTextviewDayPage"
+            android:layout_width="45dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left"
+            android:text="day"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/checkInTextviewDayPage"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:text="check in"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/checkOutTextviewDayPage"
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="check out"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
